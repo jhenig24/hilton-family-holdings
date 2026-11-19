@@ -1,0 +1,596 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" href="photos/logo.png">
+<style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Hilton Family Holdings</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Inter:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: private-wealth statement. Navy header with plain menu, generous white canvas, serif for headlines and key figures, Inter for everything operated or scanned. Light only, by design. */
+:root{
+  color-scheme:light;
+  --bg:#F6F5F2; --surface:#FFFFFF; --soft:#F1F0EC; --ink:#141A22; --ink-2:#3F4856; --muted:#6E7684; --line:#E3E1DB; --line-2:#ECEAE5;
+  --navy:#16202C; --navy-muted:#9AA4B2;
+  --gold-ink:#86672F; --gold-lt:#D9BB82; --gold-soft:#F4EDE0;
+  --green:#1C7A4D; --green-lt:#7FD0A2; --green-soft:#E3F1E9; --red:#A8323A; --red-soft:#F8E8E9;
+  --e-hfs:#8E2A38; --e-4hhhh:#A8834A; --e-sjh-legacy:#2F7A7F; --e-family-trust:#3E6A9E; --e-trust-2019:#5B6B3A; --e-other:#6D7480;
+  --f-serif:"Newsreader",Georgia,"Times New Roman",serif; --f-sans:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --r:12px; --shadow:0 1px 2px rgba(20,26,34,.04),0 8px 24px rgba(20,26,34,.06);
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-sans);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--navy);z-index:40}
+a{color:inherit;text-decoration:none}
+button,input,select{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--gold-lt);outline-offset:2px;border-radius:4px}
+.gut{padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.inner{max-width:1180px;margin:0 auto}
+.hdr{background:var(--navy);color:#E8EBF0;position:sticky;top:env(safe-area-inset-top,0px);z-index:30}
+.hdr .inner{display:flex;align-items:center;gap:28px;height:78px}
+.logo img{height:52px;display:block;border:1px solid #C9A35C}
+.menu{display:flex;gap:4px;flex:1;min-width:0}
+.menu a{padding:10px 16px;border-radius:8px;font-weight:500;font-size:16px;color:#CFD5DE;white-space:nowrap;position:relative}
+.menu a:hover{color:#fff;background:rgba(255,255,255,.06)}
+.menu a.on{color:#fff}
+.menu a.on::after{content:"";position:absolute;left:16px;right:16px;bottom:-16px;height:3px;background:var(--gold-lt);border-radius:3px 3px 0 0}
+.hdr-r{display:flex;align-items:center;gap:16px;font-size:14px;color:var(--navy-muted);white-space:nowrap}
+.help{border:1px solid rgba(255,255,255,.25);background:transparent;color:#fff;border-radius:999px;padding:7px 14px;font-size:14px;font-weight:500;cursor:pointer}
+.help:hover{background:rgba(255,255,255,.08)}
+main{padding-block:36px 64px}
+.view{display:flex;flex-direction:column;gap:32px;min-width:0}
+h1,h2,h3{margin:0;text-wrap:balance}
+.serif{font-family:var(--f-serif);font-weight:500;letter-spacing:-.01em}
+.title{font-family:var(--f-serif);font-weight:500;font-size:40px;line-height:1.1;letter-spacing:-.015em}
+.lede{font-size:18px;color:var(--ink-2);max-width:62ch;margin:10px 0 0}
+.sec{display:flex;flex-direction:column;gap:16px;min-width:0}
+.sec-h{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.sec-h h2{font-family:var(--f-serif);font-weight:500;font-size:26px;letter-spacing:-.01em}
+.more{font-weight:600;font-size:15px;color:var(--gold-ink);white-space:nowrap}
+.more:hover{text-decoration:underline}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);min-width:0}
+.note{font-size:14px;color:var(--muted);max-width:100ch;line-height:1.6;margin:0}
+.dot{width:10px;height:10px;border-radius:50%;display:inline-block;flex:none}
+.ent{display:inline-flex;align-items:center;gap:8px;white-space:nowrap}
+.go{color:var(--muted);font-size:22px;line-height:1;transition:transform .15s,color .15s}
+.click:hover .go,.pc:hover .go,.et:hover .go,.sr:hover .go{transform:translateX(3px);color:var(--gold-ink)}
+.tbd{color:var(--muted);font-weight:400}
+.pos{color:var(--green)}
+.kick{font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-lt);font-weight:600}
+.hero{background:var(--navy);color:#fff;border-radius:16px;overflow:hidden;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);box-shadow:0 20px 50px rgba(22,32,44,.18)}
+.hero-l{padding:44px 44px 40px;display:flex;flex-direction:column;gap:26px;min-width:0;background:radial-gradient(120% 140% at 0% 0%,#22303F 0%,var(--navy) 55%)}
+.hero h1{font-family:var(--f-serif);font-weight:500;font-size:44px;line-height:1.12;letter-spacing:-.015em}
+.hero h1 em{font-style:normal;color:var(--gold-lt)}
+.hero p{margin:0;font-size:18px;color:#C9D0DA;max-width:52ch}
+.hk-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px 28px;border-top:1px solid rgba(255,255,255,.12);padding-top:26px}
+.hk span{display:block;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--navy-muted);font-weight:600}
+.hk b{display:block;font-family:var(--f-serif);font-weight:500;font-size:34px;letter-spacing:-.01em;font-variant-numeric:tabular-nums;margin-top:2px;white-space:nowrap}
+.hk b.g{color:var(--green-lt)}
+.hk small{display:block;font-size:13.5px;color:var(--navy-muted)}
+.mosaic{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1.3fr 1fr;gap:4px;min-height:420px}
+.mosaic div{position:relative;overflow:hidden}
+.mosaic div:first-child{grid-column:1/3}
+.mosaic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.mosaic div::after{content:attr(data-l);position:absolute;left:12px;bottom:10px;font-size:12.5px;font-weight:600;color:#fff;text-shadow:0 1px 4px rgba(0,0,0,.7)}
+.etiles{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}
+.et{padding:20px 20px 18px;display:flex;flex-direction:column;gap:12px;transition:border-color .15s,box-shadow .15s}
+.et:hover{border-color:#C9C5BA;box-shadow:0 12px 30px rgba(20,26,34,.09)}
+.et .nm{display:flex;align-items:center;gap:9px;font-weight:600;font-size:15.5px;line-height:1.3;min-height:40px}
+.et .v{font-family:var(--f-serif);font-size:30px;font-weight:500;letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+.et .s{font-size:14px;color:var(--muted);display:flex;justify-content:space-between;align-items:center;gap:8px}
+.et .s b{color:var(--green);font-weight:600}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
+.pc{display:flex;flex-direction:column;overflow:hidden;transition:border-color .15s,box-shadow .15s,transform .15s}
+.pc:hover{border-color:#C9C5BA;box-shadow:0 16px 36px rgba(20,26,34,.11);transform:translateY(-2px)}
+.pc .im{aspect-ratio:3/2;background:var(--soft);position:relative;max-width:100%}
+.pc .im img{width:100%;height:100%;object-fit:cover;display:block}
+.pc .im .tag{position:absolute;left:12px;top:12px;background:rgba(22,32,44,.82);color:#fff;font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:5px 10px;border-radius:6px}
+.pc .bd{padding:18px 20px 20px;display:flex;flex-direction:column;gap:12px;flex:1}
+.pc .nm{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
+.pc h3{font-family:var(--f-serif);font-weight:500;font-size:22px;line-height:1.2;letter-spacing:-.01em}
+.pc .loc{font-size:14.5px;color:var(--muted);margin-top:3px}
+.pc .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;border-top:1px solid var(--line-2);padding-top:14px;margin-top:auto}
+.pc .stats div>span{display:block;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.pc .stats b{font-size:17px;font-weight:600;font-variant-numeric:tabular-nums}
+.noimg{display:flex;align-items:center;justify-content:center;height:100%;color:var(--muted);font-size:14px}
+.att{display:flex;flex-direction:column}
+.ai{display:grid;grid-template-columns:96px minmax(0,1fr) auto;gap:18px;align-items:center;padding:18px 22px;border-top:1px solid var(--line-2)}
+.ai:first-child{border-top:0}
+.ai:hover{background:#FAF9F6}
+.ai .dt{font-family:var(--f-serif);font-size:20px;font-weight:500;line-height:1.1}
+.ai .dt small{display:block;font-family:var(--f-sans);font-size:13px;color:var(--muted);margin-top:2px}
+.ai b{font-weight:600}
+.ai p{margin:2px 0 0;color:var(--ink-2);font-size:15px}
+.chip{font-size:12.5px;font-weight:600;padding:5px 11px;border-radius:999px;white-space:nowrap}
+.c-debt{background:var(--red-soft);color:var(--red)}
+.c-cash{background:var(--green-soft);color:var(--green)}
+.c-mile{background:var(--gold-soft);color:var(--gold-ink)}
+.c-chk{background:var(--soft);color:var(--ink-2)}
+.tabs{display:flex;gap:8px;flex-wrap:wrap}
+.tabs button{border:1px solid var(--line);background:var(--surface);padding:10px 18px;border-radius:999px;font-size:15px;font-weight:500;cursor:pointer;color:var(--ink-2)}
+.tabs button:hover{border-color:#BDB8AC}
+.tabs button.on{background:var(--navy);border-color:var(--navy);color:#fff}
+.bar{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.search{display:flex;align-items:center;gap:10px;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:0 14px;height:48px;flex:1;min-width:220px;max-width:460px}
+.search input{border:0;outline:0;background:transparent;width:100%;font-size:16px}
+.search:focus-within{border-color:var(--gold-ink)}
+.btn{display:inline-flex;align-items:center;gap:8px;height:48px;padding:0 18px;border:1px solid var(--line);border-radius:10px;background:var(--surface);font-size:15px;font-weight:500;cursor:pointer;color:var(--ink-2)}
+.btn:hover{border-color:#BDB8AC;color:var(--ink)}
+.btn.on{border-color:var(--navy);color:var(--ink)}
+.toggle{display:inline-flex;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--surface)}
+.toggle button{border:0;background:transparent;padding:0 16px;height:46px;font-size:15px;font-weight:500;cursor:pointer;color:var(--ink-2)}
+.toggle button.on{background:var(--soft);color:var(--ink);font-weight:600}
+.morefil{display:flex;gap:16px;flex-wrap:wrap;padding:18px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r)}
+.morefil label{display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600;color:var(--muted);letter-spacing:.04em;text-transform:uppercase}
+.morefil select{height:46px;border:1px solid var(--line);border-radius:8px;padding:0 12px;font-size:15.5px;background:var(--surface);color:var(--ink);text-transform:none;letter-spacing:0;font-weight:400;min-width:220px;max-width:100%}
+.count{font-size:15px;color:var(--muted)}
+.count b{color:var(--ink);font-weight:600}
+.tw{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:15.5px}
+th{font-size:12.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);font-weight:600;text-align:left;padding:14px 16px;border-bottom:1px solid var(--line);white-space:nowrap;background:var(--soft)}
+th.r,td.r{text-align:right}
+td{padding:15px 16px;border-bottom:1px solid var(--line-2);vertical-align:middle;font-variant-numeric:tabular-nums}
+tbody tr:last-child td{border-bottom:0}
+tfoot td{font-weight:700;border-top:1px solid var(--line);background:var(--soft);border-bottom:0}
+tr.click{cursor:pointer}
+tr.click:hover td{background:#FAF9F6}
+.pcell{display:flex;align-items:center;gap:14px;min-width:250px}
+.th{width:72px;height:50px;border-radius:7px;object-fit:cover;background:var(--soft);flex:none;display:block}
+.pname{font-weight:600}
+.ploc{font-size:14px;color:var(--muted)}
+.nw{white-space:nowrap}
+.back{display:inline-flex;align-items:center;gap:10px;height:48px;padding:0 20px 0 16px;border-radius:10px;border:1px solid var(--line);background:var(--surface);font-weight:600;font-size:15.5px;align-self:flex-start;box-shadow:var(--shadow)}
+.back:hover{border-color:#BDB8AC}
+.ph{position:relative;border-radius:16px;overflow:hidden;min-height:420px;background:var(--navy);display:flex;align-items:flex-end;box-shadow:0 20px 50px rgba(22,32,44,.16)}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ph::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(14,20,28,.92) 0%,rgba(14,20,28,.55) 40%,rgba(14,20,28,0) 72%)}
+.ph-t{position:relative;z-index:1;padding:36px 40px;color:#fff;display:flex;flex-direction:column;gap:8px;max-width:900px}
+.ph-t h1{font-family:var(--f-serif);font-weight:500;font-size:48px;line-height:1.08;letter-spacing:-.015em}
+.ph-t .ad{font-size:17px;color:#D5DBE3}
+.ph-t .sp{font-size:15px;color:#C3CAD4;display:flex;gap:18px;flex-wrap:wrap}
+.ph-t .sp b{color:#fff;font-weight:600}
+.two{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:24px;align-items:start}
+.fam{background:var(--navy);color:#fff;border-radius:var(--r);padding:26px 28px;display:flex;flex-direction:column;gap:20px;min-width:0}
+.fam .fh{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center}
+.fam .fh>span:first-child{font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-lt);font-weight:600}
+.fam .who{font-size:15px;color:#E5E9EF}
+.fk{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 24px}
+.fk span{display:block;font-size:13px;letter-spacing:.07em;text-transform:uppercase;color:var(--navy-muted);font-weight:600}
+.fk b{display:block;font-family:var(--f-serif);font-weight:500;font-size:34px;letter-spacing:-.01em;font-variant-numeric:tabular-nums;white-space:nowrap}
+.fk b.g{color:var(--green-lt)}.fk b.t{color:#7C8592}
+.ftab{width:100%;font-size:14.5px}
+.ftab th,.ftab td{background:transparent;color:inherit;border-color:rgba(255,255,255,.1);padding:9px 0}
+.ftab th{color:var(--navy-muted);font-size:12px}
+.ftab td.r,.ftab th.r{padding-left:12px}
+.ftab .g{color:var(--green-lt)}
+.ftab .o{color:var(--navy-muted);font-size:13px;margin-left:6px}
+.about{padding:26px 28px;display:flex;flex-direction:column;gap:18px}
+.about h2{font-family:var(--f-serif);font-weight:500;font-size:22px}
+.about>p{margin:0;font-size:16.5px;color:var(--ink-2)}
+.latest{background:var(--gold-soft);border-radius:10px;padding:18px 20px}
+.latest span{display:block;font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-ink);font-weight:700;margin-bottom:6px}
+.latest p{font-size:16.5px;color:var(--ink);margin:0}
+.facts{display:grid;grid-template-columns:repeat(6,minmax(0,1fr))}
+.fact{padding:22px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.fact+.fact{border-left:1px solid var(--line-2)}
+.fact span{font-size:12.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.fact b{font-family:var(--f-serif);font-weight:500;font-size:24px;letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+.fact b.tbd{color:var(--muted)}
+.pn{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.pn a{padding:20px 24px;display:flex;flex-direction:column;gap:4px}
+.pn a:hover{border-color:#BDB8AC}
+.pn small{font-size:13px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;font-weight:600}
+.pn b{font-family:var(--f-serif);font-weight:500;font-size:20px}
+.ehead{background:var(--navy);color:#fff;border-radius:16px;padding:36px 40px;display:flex;flex-direction:column;gap:24px;box-shadow:0 20px 50px rgba(22,32,44,.16);background-image:radial-gradient(120% 140% at 0% 0%,#22303F 0%,var(--navy) 55%)}
+.ehead h1{font-family:var(--f-serif);font-weight:500;font-size:40px;letter-spacing:-.015em;display:flex;align-items:center;gap:14px;margin-top:6px}
+.ehead h1 .dot{width:14px;height:14px}
+.ihero{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:24px}
+.ibig{color:#fff;border-radius:16px;padding:40px;display:flex;flex-direction:column;gap:22px;justify-content:space-between;background:radial-gradient(120% 140% at 100% 0%,#22303F 0%,var(--navy) 60%);box-shadow:0 20px 50px rgba(22,32,44,.16);min-width:0}
+.ibig .amt{font-family:var(--f-serif);font-weight:500;font-size:76px;line-height:1;letter-spacing:-.02em;color:var(--green-lt);font-variant-numeric:tabular-nums}
+.ibig .amt small{font-size:34px;color:#BFE8CF}
+.ibig .hk-row{padding-top:22px}
+.donut{padding:28px;display:grid;grid-template-columns:220px minmax(0,1fr);gap:28px;align-items:center}
+.donut svg{width:220px;height:220px;display:block;max-width:100%}
+.leg{display:flex;flex-direction:column;gap:14px;min-width:0}
+.leg a{display:grid;grid-template-columns:minmax(0,1fr) 40px 64px;gap:10px;align-items:center;font-size:15.5px}
+.leg a:hover .ent{text-decoration:underline}
+.leg b{font-variant-numeric:tabular-nums;font-weight:600}
+.leg small{color:var(--muted);font-size:13.5px;text-align:right}
+.leg b{text-align:right}
+.leg .ent{white-space:normal}
+.src{display:flex;flex-direction:column}
+.sr{display:grid;grid-template-columns:72px minmax(0,1.2fr) minmax(0,1fr) 110px 24px;gap:18px;align-items:center;padding:16px 22px;border-top:1px solid var(--line-2)}
+.sr:first-child{border-top:0}
+.sr:hover{background:#FAF9F6}
+.sr .meter{height:10px;background:var(--line-2);border-radius:5px;overflow:hidden}
+.sr .meter i{display:block;height:100%;background:linear-gradient(90deg,#3BA36F,var(--green));border-radius:5px}
+.sr .amt{text-align:right;font-weight:700;color:var(--green);font-size:17px;font-variant-numeric:tabular-nums}
+.sr .yl{font-size:13.5px;color:var(--muted);margin-top:6px}
+.pending{display:flex;gap:10px;flex-wrap:wrap}
+.pending a{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:8px 14px;font-size:14.5px;color:var(--ink-2)}
+.pending a:hover{border-color:#BDB8AC;color:var(--ink)}
+.ov{position:fixed;inset:0;background:rgba(14,20,28,.55);z-index:50;display:flex;align-items:center;justify-content:center;padding:24px}
+.dlg{background:var(--surface);border-radius:16px;max-width:560px;width:100%;padding:32px;display:flex;flex-direction:column;gap:18px;box-shadow:0 30px 80px rgba(0,0,0,.3)}
+.dlg h2{font-family:var(--f-serif);font-weight:500;font-size:28px}
+.dlg ol{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:12px;font-size:16.5px;color:var(--ink-2)}
+.dlg ol b{color:var(--ink)}
+.dlg button{align-self:flex-end;height:46px;padding:0 22px;border:0;border-radius:10px;background:var(--navy);color:#fff;font-weight:600;cursor:pointer}
+.foot{border-top:1px solid var(--line);padding-block:22px 34px;color:var(--muted);font-size:13.5px}
+.foot .inner{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.load{padding:120px 0;text-align:center;color:var(--muted)}
+@media (prefers-reduced-motion:no-preference){.view{animation:in .3s ease-out}@keyframes in{from{opacity:.4;transform:translateY(4px)}to{opacity:1;transform:none}}}
+@media (max-width:1100px){
+  .etiles{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .facts{grid-template-columns:repeat(3,minmax(0,1fr))}.fact:nth-child(4){border-left:0}.fact:nth-child(n+4){border-top:1px solid var(--line-2)}
+  .hdr-r .asof{display:none}
+}
+@media (max-width:920px){
+  .hero,.two,.ihero{grid-template-columns:minmax(0,1fr)!important}
+  .mosaic{min-height:300px}
+  .hdr .inner{height:auto;flex-wrap:wrap;gap:10px 16px;padding-block:12px}
+  .menu{order:3;width:100%;overflow-x:auto;scrollbar-width:none;gap:2px}
+  .menu a{padding:8px 12px;font-size:15px}.menu a.on::after{bottom:-8px;left:12px;right:12px}
+  .hdr-r{margin-left:auto}
+  .logo img{height:42px}
+  .sr{grid-template-columns:56px minmax(0,1fr) 96px 20px}.sr .mcol{display:none}
+  .sr .th{width:56px;height:40px}
+}
+@media (max-width:640px){
+  main{padding-block:24px 48px}
+  .title{font-size:32px}.hero h1{font-size:30px}.ph-t h1{font-size:32px}
+  .hero-l{padding:28px 24px}.hk-row{grid-template-columns:repeat(2,minmax(0,1fr))!important}.hk b{font-size:27px}
+  .etiles{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .facts{grid-template-columns:repeat(2,minmax(0,1fr))}.fact{border-left:0!important;border-top:1px solid var(--line-2)}.fact:nth-child(-n+2){border-top:0}.fact:nth-child(even){border-left:1px solid var(--line-2)!important}
+  .ph{min-height:340px}.ph-t{padding:24px}
+  .ai{grid-template-columns:72px minmax(0,1fr);padding:16px}.ai .chip{grid-column:2;justify-self:start}
+  .donut{grid-template-columns:minmax(0,1fr);justify-items:center}
+  .leg{width:100%}
+  .ibig{padding:28px}.ibig .amt{font-size:56px}
+  .pn{grid-template-columns:1fr}
+  .ehead{padding:28px 24px}.ehead h1{font-size:28px}
+  .fk b{font-size:28px}
+  .et .s{flex-direction:column;align-items:flex-start;gap:2px}
+  .ftab{font-size:13px}.ftab td.r,.ftab th.r{padding-left:8px}.ftab .o{display:block;margin-left:18px}
+  .fam{padding:22px 18px}
+}
+
+.ohero{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);border-radius:18px;overflow:hidden;background:var(--navy);color:#fff;box-shadow:0 24px 60px rgba(22,32,44,.2)}
+.oh-l{padding:44px 48px;display:flex;flex-direction:column;gap:22px;justify-content:center;background:radial-gradient(130% 140% at 0% 0%,#24323F 0%,var(--navy) 55%);min-width:0}
+.oh-logo{width:190px;border:1px solid #C9A35C;display:block}
+.ohero h1{font-family:var(--f-serif);font-weight:500;font-size:46px;line-height:1.1;letter-spacing:-.015em}
+.ohero h1 em{font-style:normal;color:var(--gold-lt)}
+.ohero p{margin:0;font-size:18px;color:#C9D0DA;max-width:50ch}
+.oh-k{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;border-top:1px solid rgba(255,255,255,.14);padding-top:24px}
+.oh-k .hk{display:block;border-radius:8px}
+.oh-k .hk:hover b{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:6px}
+.oh-r{position:relative;min-height:520px}
+.oh-r img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%}
+.oh-r::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(to right,var(--navy) 0%,rgba(22,32,44,0) 22%)}
+.ribbon{overflow:hidden;margin-inline:calc(-1 * max(20px,env(safe-area-inset-left,0px)));-webkit-mask-image:linear-gradient(to right,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(to right,transparent,#000 6%,#000 94%,transparent)}
+.rb-track{display:flex;gap:14px;width:max-content;animation:drift 140s linear infinite}
+.ribbon:hover .rb-track,.ribbon:focus-within .rb-track{animation-play-state:paused}
+@keyframes drift{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.rb-track{animation:none}.ribbon{overflow-x:auto}}
+.rb{position:relative;width:260px;height:170px;border-radius:12px;overflow:hidden;flex:none;background:var(--soft);box-shadow:var(--shadow)}
+.rb img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}
+.rb:hover img{transform:scale(1.04)}
+.rb::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(14,20,28,.82),rgba(14,20,28,0) 55%)}
+.rb span{position:absolute;left:14px;right:14px;bottom:12px;z-index:1;color:#fff;font-weight:600;font-size:15px;line-height:1.25}
+.rb small{display:block;font-weight:400;font-size:12.5px;color:#D5DBE3}
+.oinc{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.2fr) minmax(0,1.1fr);transition:border-color .15s,box-shadow .15s}
+.oinc:hover{border-color:#C9C5BA;box-shadow:0 14px 34px rgba(20,26,34,.1)}
+.oinc>div{padding:26px 28px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.oinc>div+div{border-left:1px solid var(--line-2)}
+.oinc .lbl{font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.oi-a b{font-family:var(--f-serif);font-weight:500;font-size:54px;line-height:1;color:var(--green);letter-spacing:-.02em}
+.oi-a small{font-size:15px;color:var(--ink-2)}
+.ob{display:grid;grid-template-columns:170px minmax(0,1fr) 64px;gap:12px;align-items:center;font-size:15px}
+.ob i{height:9px;background:var(--line-2);border-radius:5px;overflow:hidden;display:block}
+.ob em{display:block;height:100%;border-radius:5px}
+.ob b,.os b{text-align:right;font-variant-numeric:tabular-nums;font-weight:600}
+.os{display:grid;grid-template-columns:56px minmax(0,1fr) auto;gap:12px;align-items:center;font-size:15px;font-weight:500}
+.os .th{width:56px;height:40px}
+.os b{color:var(--green)}
+@media (max-width:1000px){.oinc{grid-template-columns:1fr 1fr}.oi-c{grid-column:1/3;border-left:0!important;border-top:1px solid var(--line-2)}}
+@media (max-width:920px){.ohero{grid-template-columns:minmax(0,1fr)}.oh-r{min-height:340px;order:-1}.oh-r::before{background:linear-gradient(to top,var(--navy) 0%,rgba(22,32,44,0) 30%)}}
+@media (max-width:640px){.oh-l{padding:28px 24px}.ohero h1{font-size:30px}.oh-logo{width:150px}.oh-k{grid-template-columns:1fr;gap:16px}.oinc{grid-template-columns:1fr}.oinc>div+div{border-left:0;border-top:1px solid var(--line-2)}.oi-c{grid-column:auto}.rb{width:210px;height:140px}.ob{grid-template-columns:110px minmax(0,1fr) 56px}}
+
+.pdfbtn{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 16px;border-radius:999px;border:1px solid rgba(217,187,130,.55);background:transparent;color:var(--gold-lt);font-weight:600;font-size:14.5px;cursor:pointer}
+.pdfbtn:hover{background:rgba(217,187,130,.12)}
+@media (max-width:640px){.pdfbtn{height:36px;padding:0 12px;font-size:13.5px}}
+.signout{color:var(--navy-muted);font-size:14px}.signout:hover{color:#fff}
+@media (max-width:640px){.signout{display:none}}
+</style>
+</head>
+<body>
+
+
+<header class="hdr gut">
+  <div class="inner">
+    <a class="logo" href="#overview" aria-label="Overview"><img src="photos/logo.png" alt="Hilton Family Real Estate Holdings"></a>
+    <nav class="menu" id="menu" aria-label="Main">
+      <a href="#overview" data-r="overview">Overview</a>
+      <a href="#properties" data-r="properties">Properties</a>
+      <a href="#entities" data-r="entities">By Entity</a>
+      <a href="#income" data-r="income">Income</a>
+      <a href="#watch" data-r="watch">Watch List</a>
+    </nav>
+    <div class="hdr-r"><a class="signout" href="/logout">Sign out</a><span class="asof">As of <span id="asof">November 2026</span></span><a class="pdfbtn" href="Hilton_Family_Real_Estate_Holdings.pdf" download="Hilton Family Real Estate Holdings.pdf"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0-5-5m5 5 5-5M5 21h14"/></svg>Download PDF</a></div>
+  </div>
+</header>
+<main class="gut"><div class="inner" id="view"><div class="load">Loading the portfolio</div></div></main>
+<footer class="foot gut"><div class="inner"><span>Hilton Family Real Estate Holdings · Private and confidential</span><span>Family share figures as of <span id="asof2">November 2026</span></span></div></footer>
+
+<script>
+const WATCH = [
+  { label: "Oct 2026", pid: "nirvana", k: "chk", tag: "To confirm", t: "Entitlement extension", s: "Entitlements ran through October 2026. Confirm the extension was granted." },
+  { label: "Dec 2026", pid: "goodyear-tech-and-industrial-center", k: "cash", tag: "Money back", t: "Refinance expected to close", s: "Expected to return the family's full $350K investment." },
+  { label: "Dec 2026", pid: "triumph-business-center", k: "mile", tag: "Milestone", t: "Second mortgage paid off", s: "Adds about $140K a year of property cash flow." },
+  { label: "Dec 2026", pid: "metropolitan-coral-square", k: "mile", tag: "Milestone", t: "State certification filing", s: "Filing the third week of December; 91 of 99 leases qualify." },
+  { label: "Jan 2027", pid: "airport-48", k: "debt", tag: "Loan", t: "Prepayment lockout ends", s: "The RGA loan can be prepaid with yield maintenance after January 25, 2027." },
+  { label: "Feb 2027", pid: "superior-logistics-center", k: "debt", tag: "Loan", t: "Loan matures", s: "$18.3M USAA loan at 2.90%; a refinance is being prepared." },
+  { label: "Apr 2027", pid: "metropolitan-coral-square", k: "debt", tag: "Loan", t: "Construction loan due", s: "$37.0M First Horizon loan at SOFR + 200." },
+  { label: "Jun 2027", pid: "amiya-palm-valley", k: "debt", tag: "Loan", t: "Loan payments increase", s: "Interest-only period ends; about $567K a year more debt service." },
+  { label: "Aug 2028", pid: "citywest-place", k: "debt", tag: "Loan", t: "Loan initial maturity", s: "$235M CMBS loan, with three one-year extensions available." },
+];
+const COMMIT = [
+  { pid: "222-fifth", eid: "hfs", amt: 4000000, t: "Committed for a future capital call" },
+  { pid: "600-west", eid: "4hhhh", amt: 3000000, t: "Committed beyond the $3M already funded" },
+  { pid: "gulf-shores-partners", eid: "sjh-legacy", amt: 640000, t: "$1.36M funded of a $2M commitment" },
+  { pid: "southwest-value-partners", eid: "sjh-legacy", amt: 533725, t: "Still callable across Funds XIV, XVI and XVIII" },
+];
+const ENAME = { hfs: "Hilton Family Sports", "4hhhh": "4 HHHH, LLC", "sjh-legacy": "SJH Legacy Holdings, LP", "family-trust": "Steven J. Hilton Family Trust", "trust-2019": "Steven J. Hilton 2019 Irrevocable Trust", other: "Other" };
+const ESHORT = { hfs: "Hilton Family Sports", "4hhhh": "4 HHHH", "sjh-legacy": "SJH Legacy", "family-trust": "Family Trust", "trust-2019": "2019 Trust", other: "Other" };
+const MOSAIC = [["village-at-prasada", "Village at Prasada"], ["citywest-place", "CityWest Place"], ["the-cooper-202", "The Cooper 202"]];
+let D = null;
+const S = { q: "", sec: "all", eid: "all", sponsor: "all", view: "cards", more: false };
+try { const v = localStorage.getItem("hf-view"); if (v === "cards" || v === "table") S.view = v; } catch (e) {}
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const Mp = (v) => v == null ? "TBD" : v === 0 ? "$0" : v >= 1000 ? `$${v.toFixed(0)}M` : v >= 1 ? `$${v.toFixed(1)}M` : `$${Math.round(v * 1000)}K`;
+const M = (v) => v == null ? `<span class="tbd">TBD</span>` : Mp(v);
+const Kp = (d) => d == null ? "TBD" : d === 0 ? "$0" : d >= 1e6 ? `$${(d / 1e6).toFixed(2)}M` : `$${Math.round(d / 1000)}K`;
+const K = (d) => d == null ? `<span class="tbd">TBD</span>` : Kp(d);
+const dot = (eid) => `<span class="dot" style="background:var(--e-${eid})"></span>`;
+const byId = (id) => D.properties.find((p) => p.id === id);
+const entList = (p) => [...new Map(p.positions.map((x) => [x.eid, x])).values()].map((x) => `<span class="ent">${dot(x.eid)}${ESHORT[x.eid]}</span>`).join("<br>");
+const annTxt = (p) => p.tot.ann == null ? `<span class="tbd">TBD</span>` : p.tot.ann === 0 ? "$0" : `<span class="pos">${Kp(p.tot.ann * 1e6)}${p.tot.annPartial ? "+" : ""}</span>`;
+const invTxt = (p) => p.inCityWest ? `<span class="tbd">With CityWest</span>` : M(p.tot.inv);
+const valLabel = (p) => { const h = p.positions.map((x) => x.valHow); return h.every((x) => x === "reported") ? "Value" : h.every((x) => x === "cost") ? "Value (at cost)" : "Estimated Value"; };
+const growth = (m) => m ? `${m.toFixed(2)}x` : "TBD";
+const plural = (n, a, b) => `${n} ${n === 1 ? a : b}`;
+const note = () => `<p class="note">All figures are the family's share. Where a sponsor has not reported a value, value is estimated from the family's ownership of the property's equity, or shown at the amount invested. Expected yearly income uses each sponsor's stated or most recent distribution; a "+" means some figures are still to come.</p>`;
+
+function route() {
+  if (!D) return;
+  const r = (location.hash || "#overview").slice(1) || "overview";
+  const key = r.startsWith("p-") ? "properties" : r.startsWith("e-") ? "entities" : r;
+  document.querySelectorAll("#menu a").forEach((a) => a.classList.toggle("on", a.dataset.r === key));
+  let html;
+  if (r === "properties") html = vProps();
+  else if (r.startsWith("p-") && byId(r.slice(2))) html = vProp(byId(r.slice(2)));
+  else if (r === "entities") html = vEnts();
+  else if (r.startsWith("e-") && ENAME[r.slice(2)]) html = vEnt(r.slice(2));
+  else if (r === "income") html = vIncome();
+  else if (r === "watch") html = vWatch();
+  else html = vOverview();
+  document.getElementById("view").innerHTML = `<div class="view">${html}</div>`;
+  bind(r);
+  window.scrollTo(0, 0);
+}
+function attItem(w) { const p = byId(w.pid); return `<a class="ai click" href="#p-${p.id}"><div class="dt">${w.label.split(" ")[0]}<small>${w.label.split(" ")[1]}</small></div><div><b>${esc(p.name)}</b> · ${esc(w.t)}<p>${esc(w.s)}</p></div><span class="chip c-${w.k}">${w.tag}</span></a>`; }
+function pcard(p) {
+  return `<a class="card pc" href="#p-${p.id}"><div class="im">${p.photo ? `<img src="photos/${p.photo}" alt="" loading="lazy">` : `<div class="noimg">Photo to come</div>`}<span class="tag">${p.secName}</span></div>
+  <div class="bd"><div class="nm"><div><h3>${esc(p.name)}</h3><div class="loc">${esc(p.loc)}</div></div><span class="go" aria-hidden="true">›</span></div>
+  <div style="font-size:14.5px">${entList(p)}</div>
+  <div class="stats"><div><span>Invested</span><b>${invTxt(p)}</b></div><div><span>Value</span><b>${M(p.tot.val)}</b></div><div><span>Yearly Income</span><b>${annTxt(p)}</b></div></div></div></a>`;
+}
+
+/* ---------- Overview ---------- */
+function vOverview() {
+  const T = D.totals, v = (x) => x.toFixed(1);
+  const es = [...D.entities].sort((a, b) => b.val - a.val);
+  const rib = D.properties.filter((p) => p.photo && !/logo|swvp/i.test(p.photo));
+  const ribHTML = rib.map((p) => `<a class="rb" href="#p-${p.id}"><img src="photos/${p.photo}" alt="" loading="lazy"><span>${esc(p.name)}<small>${esc(p.loc)}</small></span></a>`).join("");
+  const rows = []; D.properties.forEach((p) => p.positions.forEach((x) => { if (x.ann > 0) rows.push({ p, x }); }));
+  const ann = rows.reduce((a, r) => a + r.x.ann, 0);
+  const byE = Object.keys(ENAME).map((k) => ({ k, a: rows.filter((r) => r.x.eid === k).reduce((s, r) => s + r.x.ann, 0) })).filter((r) => r.a).sort((a, b) => b.a - a.a);
+  const byP = new Map(); rows.forEach(({ p, x }) => byP.set(p.id, { p, a: (byP.get(p.id)?.a || 0) + x.ann }));
+  const top = [...byP.values()].sort((a, b) => b.a - a.a).slice(0, 3);
+  return `
+  <section class="ohero">
+    <div class="oh-l">
+      <img class="oh-logo" src="photos/logo.png" alt="Hilton Family Real Estate Holdings">
+      <div class="kick">Portfolio Summary · ${D.asOf}</div>
+      <h1>The family's real estate is worth an estimated <em>$${v(T.val)} million</em>.</h1>
+      <p>${T.props} properties held across five family entities, with $${v(T.dist)} million already returned and about $${T.ann.toFixed(1)} million expected each year.</p>
+      <div class="oh-k">
+        <a class="hk" href="#entities"><span>Estimated Value</span><b>${Mp(T.val)}</b><small>Family share today</small></a>
+        <a class="hk" href="#properties"><span>Returned to Date</span><b class="g">${Mp(T.dist)}</b><small>Cash received</small></a>
+        <a class="hk" href="#income"><span>Yearly Income</span><b class="g">$${T.ann.toFixed(2)}M</b><small>About ${Kp(T.ann * 1e6 / 4)} a quarter</small></a>
+      </div>
+    </div>
+    <div class="oh-r"><img src="photos/cover_wide.jpg" alt="The Hilton family"></div>
+  </section>
+  <section class="ribbon" aria-label="Properties in the portfolio">
+    <div class="rb-track">${ribHTML}${ribHTML.replace(/<a class="rb"/g, '<a class="rb" aria-hidden="true" tabindex="-1"')}</div>
+  </section>
+  <section class="sec">
+    <div class="sec-h"><h2>By entity</h2><a class="more" href="#entities">See all entities ›</a></div>
+    <div class="etiles">${es.map((e) => `<a class="card et" href="#e-${e.id}"><div class="nm">${dot(e.id)}${ENAME[e.id]}</div><div class="v">${Mp(e.val)}</div><div class="s"><span>${plural(e.props, "property", "properties")}</span><span class="go">›</span></div></a>`).join("")}</div>
+  </section>
+  <section class="sec">
+    <div class="sec-h"><h2>Income</h2><a class="more" href="#income">See all income ›</a></div>
+    <a class="card oinc" href="#income">
+      <div class="oi-a"><span class="lbl">Expected each year</span><b>$${(ann / 1e6).toFixed(2)}M</b><small>About ${Kp(ann / 4)} a quarter from ${byP.size} properties</small></div>
+      <div class="oi-b"><span class="lbl">By entity</span>${byE.map((r) => `<div class="ob"><span class="ent">${dot(r.k)}${ESHORT[r.k]}</span><i><em style="width:${(r.a / byE[0].a) * 100}%;background:var(--e-${r.k})"></em></i><b>${Kp(r.a)}</b></div>`).join("")}</div>
+      <div class="oi-c"><span class="lbl">Largest sources</span>${top.map((r) => `<div class="os">${r.p.photo ? `<img class="th" src="photos/${r.p.photo}" alt="">` : ""}<span>${esc(r.p.name)}</span><b>${Kp(r.a)}</b></div>`).join("")}</div>
+    </a>
+  </section>
+  ${note()}`;
+}
+
+/* ---------- Properties ---------- */
+function filtered() {
+  const q = S.q.trim().toLowerCase();
+  return D.properties.filter((p) => (S.sec === "all" || p.sec === S.sec) && (S.eid === "all" || p.positions.some((x) => x.eid === S.eid)) && (S.sponsor === "all" || p.sponsor === S.sponsor) &&
+    (!q || [p.name, p.loc, p.addr, p.sponsor, ...p.positions.map((x) => ENAME[x.eid])].join(" ").toLowerCase().includes(q)));
+}
+function vProps() {
+  const sponsors = [...new Set(D.properties.map((p) => p.sponsor))].sort((a, b) => a === "Other" ? 1 : b === "Other" ? -1 : a.localeCompare(b));
+  const tabs = [["all", "All properties"], ...D.sections.filter((s) => D.properties.some((p) => p.sec === s.key)).map((s) => [s.key, s.name])];
+  const nf = (S.eid !== "all") + (S.sponsor !== "all");
+  return `
+  <div><h1 class="title">Properties</h1><p class="lede">Every investment the family holds. Click a property to open its full page.</p></div>
+  <div class="tabs" role="group" aria-label="Type of property">${tabs.map(([k, n]) => `<button type="button" data-tab="${k}" class="${S.sec === k ? "on" : ""}">${n}</button>`).join("")}</div>
+  <div class="bar">
+    <label class="search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--muted);flex:none"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="q" type="search" placeholder="Search by name, city or sponsor" value="${esc(S.q)}" aria-label="Search properties"></label>
+    <button type="button" class="btn ${S.more || nf ? "on" : ""}" id="morebtn">More filters${nf ? ` (${nf})` : ""}</button>
+    <div class="toggle" role="group" aria-label="Layout"><button type="button" data-v="cards" class="${S.view === "cards" ? "on" : ""}">Photos</button><button type="button" data-v="table" class="${S.view === "table" ? "on" : ""}">List</button></div>
+  </div>
+  <div class="morefil" id="morefil" ${S.more ? "" : "hidden"}>
+    <label>Owned by<select id="f-e"><option value="all">All entities</option>${Object.keys(ENAME).filter((k) => k !== "other").map((k) => `<option value="${k}" ${S.eid === k ? "selected" : ""}>${ENAME[k]}</option>`).join("")}</select></label>
+    <label>Sponsor<select id="f-s"><option value="all">All sponsors</option>${sponsors.map((s) => `<option ${S.sponsor === s ? "selected" : ""}>${esc(s)}</option>`).join("")}</select></label>
+    <button type="button" class="btn" id="clear" style="align-self:flex-end">Clear all filters</button>
+  </div>
+  <div id="plist">${propList()}</div>
+  ${note()}`;
+}
+function propList() {
+  const ps = filtered();
+  if (!ps.length) return `<div class="card" style="padding:48px;text-align:center;color:var(--muted)">No properties match. <button type="button" class="more" style="border:0;background:none;cursor:pointer" id="clear2">Clear all filters</button></div>`;
+  const sum = (k) => ps.reduce((a, p) => a + (p.tot[k] || 0), 0);
+  const head = `<p class="count" style="margin:0 0 16px">Showing <b>${ps.length}</b> of ${D.properties.length} properties · <b>${Mp(sum("val"))}</b> estimated value</p>`;
+  if (S.view === "cards") return head + `<div class="pgrid">${ps.map(pcard).join("")}</div>`;
+  return head + `<div class="card tw"><table><thead><tr><th>Property</th><th>Type</th><th>Owned by</th><th class="r">Invested</th><th class="r">Value</th><th class="r">Returned</th><th class="r">Yearly Income</th><th></th></tr></thead><tbody>
+  ${ps.map((p) => `<tr class="click" data-go="p-${p.id}"><td><div class="pcell">${p.photo ? `<img class="th" src="photos/${p.photo}" alt="" loading="lazy">` : `<span class="th"></span>`}<div><div class="pname">${esc(p.name)}</div><div class="ploc">${esc(p.loc)}</div></div></div></td><td class="nw">${p.secName}</td><td>${entList(p)}</td><td class="r nw">${invTxt(p)}</td><td class="r">${M(p.tot.val)}</td><td class="r nw ${p.tot.dist ? "pos" : ""}">${p.inCityWest ? '<span class="tbd">With CityWest</span>' : M(p.tot.dist)}</td><td class="r">${annTxt(p)}</td><td><span class="go">›</span></td></tr>`).join("")}
+  </tbody><tfoot><tr><td>Total</td><td></td><td></td><td class="r">${Mp(sum("inv"))}</td><td class="r">${Mp(sum("val"))}</td><td class="r">${Mp(sum("dist"))}</td><td class="r">${Kp(sum("ann") * 1e6)}</td><td></td></tr></tfoot></table></div>`;
+}
+
+/* ---------- Property page ---------- */
+function shortMoney(v) { return String(v).replace(/\$([\d,]{7,})(?![\d,])/, (a, n) => { const k = +n.replace(/,/g, ""); return k >= 1e6 ? `$${(k / 1e6).toFixed(1)}M` : `$${Math.round(k / 1e3)}K`; }); }
+function vProp(p) {
+  const i = D.properties.indexOf(p), prev = D.properties[(i - 1 + D.properties.length) % D.properties.length], nxt = D.properties[(i + 1) % D.properties.length];
+  const t = p.tot, multi = p.positions.length > 1, x0 = p.positions[0];
+  const fk = [["Invested", p.inCityWest ? "With CityWest" : Mp(t.inv), ""], [valLabel(p), Mp(t.val), ""], ["Returned to Date", p.inCityWest ? "With CityWest" : Mp(t.dist), "g"], ["Expected Yearly Income", t.ann == null ? "TBD" : Kp(t.ann * 1e6) + (t.annPartial && t.ann ? "+" : ""), "g"]];
+  const basis = [...new Set(p.positions.filter((x) => x.ann && x.annBasis).map((x) => x.annBasis))];
+  return `
+  <a class="back" href="#properties"><span style="font-size:20px">‹</span> Back to all properties</a>
+  <section class="ph">${p.photo ? `<img src="photos/${p.photo}" alt="${esc(p.name)}">` : ""}
+    <div class="ph-t"><div class="kick">${p.secName}</div><h1>${esc(p.name)}</h1><div class="ad">${esc(p.addr)}</div>
+    <div class="sp"><span>Sponsor <b>${esc(p.sponsor)}</b></span>${p.updated ? `<span>Last updated <b>${esc(p.updated)}</b></span>` : ""}</div></div>
+  </section>
+  <div class="two">
+    <section class="fam">
+      <div class="fh"><span>The Family's Position</span>${!multi ? `<span class="who ent">${dot(x0.eid)}${ENAME[x0.eid]}${/TBD|Loan|Fund/.test(x0.own) ? "" : ` · ${esc(x0.own)}`}</span>` : ""}</div>
+      <div class="fk">${fk.map(([l, v, c]) => `<div><span>${l}</span><b class="${/TBD|With/.test(v) ? "t" : c}">${v}</b></div>`).join("")}</div>
+      ${multi ? `<div class="tw"><table class="ftab"><thead><tr><th>Owned by</th><th class="r">Invested</th><th class="r">Value</th><th class="r">Returned</th><th class="r">Yearly</th></tr></thead><tbody>${p.positions.map((x) => `<tr><td><span class="ent">${dot(x.eid)}${ESHORT[x.eid]}${x.cls ? ` (${esc(x.cls)})` : ""}</span>${/TBD|Loan|Fund/.test(x.own) ? "" : `<span class="o">${esc(x.own)}</span>`}</td><td class="r">${Mp(x.inv)}</td><td class="r">${Mp(x.val)}</td><td class="r g">${x.dist == null ? (/n\/a/i.test(x.distText || "") ? "n/a" : "TBD") : Mp(x.dist)}</td><td class="r g">${Kp(x.ann)}</td></tr>`).join("")}</tbody></table></div>` : ""}
+    </section>
+    <section class="card about"><h2>About this investment</h2><p>${esc(p.desc)}</p>
+      <div class="latest"><span>Latest</span><p>${esc(p.latest)}</p></div>
+      ${basis.length ? `<p class="note">How yearly income is estimated: ${esc(basis.join("; "))}.</p>` : ""}</section>
+  </div>
+  <section class="card"><div style="padding:22px 22px 0"><h2 class="serif" style="font-size:22px">The property</h2></div><div class="facts">${p.facts.map(([l, v]) => `<div class="fact"><span>${esc(l)}</span><b class="${/TBD/.test(v) ? "tbd" : ""}">${esc(shortMoney(v))}</b></div>`).join("")}</div></section>
+  <nav class="pn" aria-label="More properties"><a class="card" href="#p-${prev.id}"><small>‹ Previous property</small><b>${esc(prev.name)}</b></a><a class="card" href="#p-${nxt.id}" style="text-align:right"><small>Next property ›</small><b>${esc(nxt.name)}</b></a></nav>`;
+}
+
+/* ---------- Entities ---------- */
+function vEnts() {
+  const es = [...D.entities].sort((a, b) => b.val - a.val), T = D.totals;
+  return `
+  <div><h1 class="title">By Entity</h1><p class="lede">Each family entity and what it owns. A property owned by two entities appears under both.</p></div>
+  <div class="etiles">${es.map((e) => `<a class="card et" href="#e-${e.id}"><div class="nm">${dot(e.id)}${ENAME[e.id]}</div><div class="v">${Mp(e.val)}</div><div class="s"><span>${plural(e.props, "property", "properties")}</span><span class="go">›</span></div></a>`).join("")}</div>
+  <div class="card tw"><table><thead><tr><th>Entity</th><th class="r">Properties</th><th class="r">Invested</th><th class="r">Estimated Value</th><th class="r">Returned</th><th class="r">Growth</th><th class="r">Yearly Income</th><th></th></tr></thead><tbody>
+  ${es.map((e) => `<tr class="click" data-go="e-${e.id}"><td style="min-width:300px"><span class="ent pname">${dot(e.id)}${ENAME[e.id]}</span></td><td class="r">${e.props}</td><td class="r">${Mp(e.inv)}</td><td class="r"><b>${Mp(e.val)}</b></td><td class="r pos">${Mp(e.dist)}</td><td class="r">${growth(e.mult)}</td><td class="r pos">${e.ann ? Kp(e.ann * 1e6) + (e.annN < e.n ? "+" : "") : "$0"}</td><td><span class="go">›</span></td></tr>`).join("")}
+  </tbody><tfoot><tr><td>All entities</td><td class="r">${T.props}</td><td class="r">${Mp(T.inv)}</td><td class="r">${Mp(T.val)}</td><td class="r">${Mp(T.dist)}</td><td class="r">${growth(T.mult)}</td><td class="r">$${T.ann.toFixed(2)}M+</td><td></td></tr></tfoot></table></div>
+  ${note()}`;
+}
+function vEnt(eid) {
+  const e = D.entities.find((x) => x.id === eid);
+  const rows = []; D.properties.forEach((p) => p.positions.forEach((x) => { if (x.eid === eid) rows.push({ p, x }); }));
+  rows.sort((a, b) => (b.x.val || 0) - (a.x.val || 0));
+  return `
+  <a class="back" href="#entities"><span style="font-size:20px">‹</span> Back to all entities</a>
+  <section class="ehead"><div><div class="kick">Family Entity</div><h1>${dot(eid)}${ENAME[eid]}</h1></div>
+    <div class="hk-row" style="grid-template-columns:repeat(4,minmax(0,1fr))">
+      <div class="hk"><span>Estimated Value</span><b>${Mp(e.val)}</b></div><div class="hk"><span>Invested</span><b>${Mp(e.inv)}</b></div>
+      <div class="hk"><span>Returned to Date</span><b class="g">${Mp(e.dist)}</b></div><div class="hk"><span>Yearly Income</span><b class="g">${e.ann ? Kp(e.ann * 1e6) : "$0"}</b></div></div></section>
+  <div class="sec-h"><h2>${plural(rows.length, "holding", "holdings")}</h2></div>
+  <div class="card tw"><table><thead><tr><th>Property</th><th>Type</th><th class="r">Ownership</th><th class="r">Invested</th><th class="r">Value</th><th class="r">Returned</th><th class="r">Yearly Income</th><th></th></tr></thead><tbody>
+  ${rows.map(({ p, x }) => `<tr class="click" data-go="p-${p.id}"><td><div class="pcell">${p.photo ? `<img class="th" src="photos/${p.photo}" alt="" loading="lazy">` : `<span class="th"></span>`}<div><div class="pname">${esc(p.name)}${x.cls ? ` <span class="ploc">(${esc(x.cls)})</span>` : ""}</div><div class="ploc">${esc(p.loc)} · ${esc(p.sponsor)}</div></div></div></td><td class="nw">${p.secName}</td><td class="r nw">${esc(x.own)}</td><td class="r nw">${/^In /.test(x.invText || "") ? '<span class="tbd">With CityWest</span>' : M(x.inv)}</td><td class="r">${M(x.val)}</td><td class="r nw ${x.dist ? "pos" : ""}">${/n\/a/i.test(x.distText || "") ? '<span class="tbd">n/a</span>' : /^In /.test(x.distText || "") ? '<span class="tbd">With CityWest</span>' : M(x.dist)}</td><td class="r ${x.ann ? "pos" : ""}">${K(x.ann)}</td><td><span class="go">›</span></td></tr>`).join("")}
+  </tbody></table></div>
+  ${note()}`;
+}
+
+/* ---------- Income ---------- */
+function vIncome() {
+  const rows = []; D.properties.forEach((p) => p.positions.forEach((x) => { if (x.ann > 0) rows.push({ p, x }); }));
+  const byP = new Map(); rows.forEach(({ p, x }) => { const r = byP.get(p.id) || { p, ann: 0, inv: 0, eids: new Set(), basis: x.annBasis }; r.ann += x.ann; r.inv += x.inv || 0; r.eids.add(x.eid); byP.set(p.id, r); });
+  const src = [...byP.values()].sort((a, b) => b.ann - a.ann);
+  const ann = rows.reduce((a, r) => a + r.x.ann, 0), inv = rows.reduce((a, r) => a + (r.x.inv || 0), 0);
+  const byE = Object.keys(ENAME).map((k) => ({ k, a: rows.filter((r) => r.x.eid === k).reduce((s, r) => s + r.x.ann, 0) })).filter((r) => r.a).sort((a, b) => b.a - a.a);
+  const pend = D.properties.filter((p) => p.positions.some((x) => x.ann == null));
+  let acc = 0; const R = 80, C = 2 * Math.PI * R;
+  const arcs = byE.map((r) => { const f = r.a / ann, s = `<circle r="${R}" cx="110" cy="110" fill="none" stroke="var(--e-${r.k})" stroke-width="30" stroke-dasharray="${Math.max(f * C - 3, 1).toFixed(2)} ${C.toFixed(2)}" stroke-dashoffset="${(-acc * C).toFixed(2)}" transform="rotate(-90 110 110)"/>`; acc += f; return s; }).join("");
+  const max = src[0].ann;
+  return `
+  <div><h1 class="title">Income</h1><p class="lede">The cash the family expects to receive each year, based on each sponsor's stated or most recent distribution.</p></div>
+  <div class="ihero">
+    <section class="ibig"><div><div class="kick">Expected Yearly Income</div><div class="amt" style="margin-top:14px">$${(ann / 1e6).toFixed(2)}<small>M</small></div><p style="margin:12px 0 0;color:#C9D0DA;font-size:17px">About ${Kp(ann / 4)} a quarter, from ${src.length} paying properties.</p></div>
+      <div class="hk-row"><div class="hk"><span>Yield</span><b>${((ann / 1e6 / inv) * 100).toFixed(1)}%</b><small>On paying investments</small></div><div class="hk"><span>Per Month</span><b>${Kp(ann / 12)}</b><small>On average</small></div><div class="hk"><span>Still to Come</span><b>${pend.length}</b><small>Properties pending</small></div></div></section>
+    <section class="card donut"><svg viewBox="0 0 220 220" role="img" aria-label="Yearly income by entity"><circle r="${R}" cx="110" cy="110" fill="none" stroke="var(--line-2)" stroke-width="30"/>${arcs}<text x="110" y="108" text-anchor="middle" fill="#141A22" style="font:500 30px var(--f-serif)">$${(ann / 1e6).toFixed(1)}M</text><text x="110" y="131" text-anchor="middle" fill="#6E7684" style="font:600 11px var(--f-sans);letter-spacing:.12em">PER YEAR</text></svg>
+      <div class="leg"><h2 class="serif" style="font-size:22px;margin-bottom:4px">By entity</h2>${byE.map((r) => `<a href="#e-${r.k}"><span class="ent">${dot(r.k)}${ESHORT[r.k]}</span><small>${Math.round((r.a / ann) * 100)}%</small><b>${Kp(r.a)}</b></a>`).join("")}</div></section>
+  </div>
+  <section class="sec">
+    <div class="sec-h"><h2>Where the income comes from</h2><span class="count">Yearly, family share</span></div>
+    <div class="card src">${src.map((r) => `<a class="sr" href="#p-${r.p.id}">${r.p.photo ? `<img class="th" src="photos/${r.p.photo}" alt="" loading="lazy">` : `<span class="th"></span>`}<div style="min-width:0"><div class="pname">${esc(r.p.name)}</div><div class="ploc">${[...r.eids].map((k) => ESHORT[k]).join(" + ")} · ${((r.ann / 1e6 / r.inv) * 100).toFixed(1)}% yield</div></div><div class="mcol"><div class="meter"><i style="width:${(r.ann / max) * 100}%"></i></div><div class="yl">${esc(r.basis || "")}</div></div><div class="amt">${Kp(r.ann)}</div><span class="go">›</span></a>`).join("")}</div>
+  </section>
+  <section class="sec" style="gap:14px">
+    <div class="sec-h"><h2>Income figures still to come</h2></div>
+    <div class="pending">${pend.map((p) => `<a href="#p-${p.id}">${esc(p.name)}</a>`).join("")}</div>
+  </section>
+  ${note()}`;
+}
+
+/* ---------- Watch list ---------- */
+function vWatch() {
+  const open = D.properties.filter((p) => p.status !== "Complete"), ct = COMMIT.reduce((a, c) => a + c.amt, 0);
+  return `
+  <div><h1 class="title">Watch List</h1><p class="lede">Dates to keep an eye on, money the family has committed but not yet put in, and figures we are still waiting on.</p></div>
+  <section class="sec"><div class="sec-h"><h2>Upcoming dates</h2></div><div class="card att">${WATCH.map(attItem).join("")}</div></section>
+  <div class="two" style="grid-template-columns:1fr 1fr">
+    <section class="sec"><div class="sec-h"><h2>Money still committed</h2><b class="serif" style="font-size:24px">$${(ct / 1e6).toFixed(2)}M</b></div>
+      <div class="card att">${COMMIT.map((c) => { const p = byId(c.pid); return `<a class="ai click" href="#p-${p.id}" style="grid-template-columns:minmax(0,1fr) auto"><div><b>${esc(p.name)}</b><p><span class="ent">${dot(c.eid)}${ESHORT[c.eid]}</span> · ${esc(c.t)}</p></div><b class="serif" style="font-size:20px">${Kp(c.amt)}</b></a>`; }).join("")}</div></section>
+    <section class="sec"><div class="sec-h"><h2>Waiting on figures</h2><span class="count">${plural(open.length, "property", "properties")}</span></div>
+      <div class="card att">${open.map((p) => `<a class="ai click" href="#p-${p.id}" style="grid-template-columns:minmax(0,1fr) auto"><div><b>${esc(p.name)}</b><p>Waiting on: ${esc(p.missing.join(", ").toLowerCase() || "current figures")}</p></div><span class="go">›</span></a>`).join("")}</div></section>
+  </div>
+  ${note()}`;
+}
+
+/* ---------- events ---------- */
+function refresh() { const el = document.getElementById("plist"); if (el) { el.innerHTML = propList(); bindRows(el); const c = document.getElementById("clear2"); if (c) c.onclick = clearAll; } }
+function clearAll() { Object.assign(S, { q: "", sec: "all", eid: "all", sponsor: "all" }); route(); }
+function bindRows(root) { root.querySelectorAll("[data-go]").forEach((tr) => tr.addEventListener("click", () => { location.hash = tr.dataset.go; })); }
+function bind(r) {
+  const v = document.getElementById("view"); bindRows(v);
+  if (r !== "properties") return;
+  v.querySelectorAll("[data-tab]").forEach((b) => b.addEventListener("click", () => { S.sec = b.dataset.tab; v.querySelectorAll("[data-tab]").forEach((x) => x.classList.toggle("on", x === b)); refresh(); }));
+  v.querySelectorAll("[data-v]").forEach((b) => b.addEventListener("click", () => { S.view = b.dataset.v; try { localStorage.setItem("hf-view", S.view); } catch (e) {} v.querySelectorAll("[data-v]").forEach((x) => x.classList.toggle("on", x === b)); refresh(); }));
+  const q = document.getElementById("q"); q.addEventListener("input", () => { S.q = q.value; refresh(); });
+  document.getElementById("morebtn").addEventListener("click", () => { S.more = !S.more; document.getElementById("morefil").hidden = !S.more; document.getElementById("morebtn").classList.toggle("on", S.more); });
+  document.getElementById("f-e").addEventListener("change", (e) => { S.eid = e.target.value; refresh(); });
+  document.getElementById("f-s").addEventListener("change", (e) => { S.sponsor = e.target.value; refresh(); });
+  document.getElementById("clear").addEventListener("click", clearAll);
+  const c = document.getElementById("clear2"); if (c) c.onclick = clearAll;
+}
+window.addEventListener("hashchange", route);
+fetch("data.json").then((r) => r.json()).then((d) => { D = d; document.getElementById("asof").textContent = d.asOf; document.getElementById("asof2").textContent = d.asOf; route(); })
+  .catch(() => { document.getElementById("view").innerHTML = `<div class="card" style="padding:48px;text-align:center">The portfolio could not be loaded. Please refresh the page.</div>`; });
+
+</script>
+
+</body>
+</html>
